@@ -1,1 +1,8 @@
-/* pages/setting/setting.wxss */
+.userinfo-avatar {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 15rpx;
+    border-radius: 50%;
+    border: 1rpx solid #f0f0f0;
+    padding: 10rpx;
+}

@@ -1,9 +1,14 @@
-<view class="container">
-    <view class='container-items'>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex-column">
-                <text class='font-title'>沈焕杰</text>
-                <text class='font-content'>查看并编辑个人资料</text>
+<view class="container" wx:if="{{hasUserInfo}}">
+    <view class='container-items' style='padding:0;'>
+        <view class='items-group items-group-flex' style='padding:0;'>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-image'>
+                    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                </view>
+                <view class="item-flex-column">
+                    <text class='font-title' style='line-height:2'>{{userInfo.nickName}}</text>
+                    <text class='font-content'>查看并编辑个人资料</text>
+                </view>
             </view>
         </view>
     </view>
@@ -11,23 +16,43 @@
 <view class="container">
     <view class='container-items'>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>账本管理</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-card"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>账本管理</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>邀请成员</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-member"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>邀请成员</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>提醒</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-remind"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>提醒</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>汇率</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-rate"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>汇率</text>
+                </view>
             </view>
         </view>
     </view>
@@ -35,29 +60,57 @@
 <view class="container">
     <view class='container-items'>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>给软件评分</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-like"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>给软件评分</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>分享</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-share"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>分享</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>常见问题</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-issue"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>常见问题</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>提建议</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-suggest"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>提建议</text>
+                </view>
             </view>
         </view>
         <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>通用设置</text>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-gear"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>通用设置</text>
+                </view>
             </view>
         </view>
     </view>
+</view>
+<view class="container">
+    <button style="color:#fff;background-color:#0ac775" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录</button>
 </view>

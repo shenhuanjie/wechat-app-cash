@@ -1,3 +1,4 @@
+@import "resource/css/iconfont.wxss";
 /**app.wxss**/
 
 page {
@@ -32,12 +33,24 @@ page {
     display: flex;
     justify-content: space-between;
 }
-
+.item-flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
 .item-flex-column {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
+.item-flex .item-flex-icon{
+    margin-right: 30rpx;
+    width:32rpx;
+}
+/* .item-flex .item-flex-image{
+    margin-right: 30rpx;
+} */
 
 /* font-style */
 
