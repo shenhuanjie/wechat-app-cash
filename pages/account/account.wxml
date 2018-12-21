@@ -102,3 +102,10 @@
         </view>
     </view>
 </view>
+<view style='margin-bottom:100rpx;'><icon class="iconfont icon-null"></icon></view>
+<!-- 底部菜单栏 -->
+<view class='container-bottom'>
+    <view class='bottom-button' bindtap='toCreate'>
+        <icon class="iconfont icon-add"></icon>
+    </view>
+</view>

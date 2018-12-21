@@ -1,4 +1,5 @@
 @import "resource/css/iconfont.wxss";
+
 /**app.wxss**/
 
 page {
@@ -33,24 +34,68 @@ page {
     display: flex;
     justify-content: space-between;
 }
+
 .item-flex-start {
     display: flex;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
 }
+
 .item-flex-column {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.item-flex .item-flex-icon{
+.item-flex .item-flex-icon {
     margin-right: 30rpx;
-    width:32rpx;
+    width: 32rpx;
 }
+
 /* .item-flex .item-flex-image{
     margin-right: 30rpx;
 } */
+
+.container-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.container-bottom .bottom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rpx;
+    height: 100rpx;
+    margin: 0 30rpx 30rpx 0;
+    box-shadow: 5rpx 6rpx 5rpx #888;
+    border-radius: 50%;
+    color: #0ac775;
+}
+
+.container-bottom .bottom-button icon {
+    font-size: 100rpx;
+}
+
+.container-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+}
+
+.fixed-bottom-button {
+    bottom: 30rpx;
+    width: 100%;
+}
+
+.fixed-bottom-button button {
+    color: #fff;
+    background-color: #0ac775;
+    width: 80%;
+}
 
 /* font-style */
 

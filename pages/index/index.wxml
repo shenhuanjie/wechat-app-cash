@@ -12,43 +12,8 @@
                 <text class='font-item'>棠下村炒菜</text>
                 <text class='font-item'>08:03</text>
             </view>
-        </view> <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>餐饮食物-早餐</text>
-                <text class='font-content'>-￥16.00</text>
-            </view>
-            <view class="item-flex font-color-gray">
-                <text class='font-item'>棠下村炒菜</text>
-                <text class='font-item'>08:03</text>
-            </view>
-        </view> <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>餐饮食物-早餐</text>
-                <text class='font-content'>-￥16.00</text>
-            </view>
-            <view class="item-flex font-color-gray">
-                <text class='font-item'>棠下村炒菜</text>
-                <text class='font-item'>08:03</text>
-            </view>
-        </view> <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>餐饮食物-早餐</text>
-                <text class='font-content'>-￥16.00</text>
-            </view>
-            <view class="item-flex font-color-gray">
-                <text class='font-item'>棠下村炒菜</text>
-                <text class='font-item'>08:03</text>
-            </view>
-        </view> <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>餐饮食物-早餐</text>
-                <text class='font-content'>-￥16.00</text>
-            </view>
-            <view class="item-flex font-color-gray">
-                <text class='font-item'>棠下村炒菜</text>
-                <text class='font-item'>08:03</text>
-            </view>
-        </view> <view class='items-group items-group-flex'>
+        </view>
+        <view class='items-group items-group-flex'>
             <view class="item-flex">
                 <text class='font-content'>餐饮食物-早餐</text>
                 <text class='font-content'>-￥16.00</text>
@@ -68,12 +33,59 @@
                 <text class='font-item'>08:03</text>
             </view>
         </view>
-        <view class='items-group'>
-            <text class='font-title font-color-blue'>所有交易</text>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>餐饮食物-早餐</text>
+                <text class='font-content'>-￥16.00</text>
+            </view>
+            <view class="item-flex font-color-gray">
+                <text class='font-item'>棠下村炒菜</text>
+                <text class='font-item'>08:03</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>餐饮食物-早餐</text>
+                <text class='font-content'>-￥16.00</text>
+            </view>
+            <view class="item-flex font-color-gray">
+                <text class='font-item'>棠下村炒菜</text>
+                <text class='font-item'>08:03</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>餐饮食物-早餐</text>
+                <text class='font-content'>-￥16.00</text>
+            </view>
+            <view class="item-flex font-color-gray">
+                <text class='font-item'>棠下村炒菜</text>
+                <text class='font-item'>08:03</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>餐饮食物-早餐</text>
+                <text class='font-content'>-￥16.00</text>
+            </view>
+            <view class="item-flex font-color-gray">
+                <text class='font-item'>棠下村炒菜</text>
+                <text class='font-item'>08:03</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex font-color-green" style='align-items:center'>
+                <view>
+                    <text class='font-title '>所有交易</text>
+                </view>
+                <view>
+                    <icon class="iconfont icon-right"></icon>
+                </view>
+            </view>
         </view>
     </view>
 </view>
-<view class="container" style='margin-bottom:155rpx;'>
+<view class="container">
     <view class='container-items'>
         <view class='items-group'>
             <text class='font-title'>收入支出</text>
@@ -118,12 +130,14 @@
                 <text class='font-item '>-￥92,191.75</text>
             </view>
         </view>
-
     </view>
 </view>
+<view style='margin-bottom:100rpx;'>
+    <icon class="iconfont icon-null"></icon>
+</view>
 <!-- 底部菜单栏 -->
-<view style='position:fixed;bottom:0;right:0;display:flex;'>
-    <view style='display:flex;justify-content:center;align-items:center;width:100rpx;height:100rpx;margin:0 30rpx 30rpx 0;box-shadow: 5rpx 6rpx 5rpx #888888;border-radius:50%;color:#0ac775'>
-        <icon class="iconfont icon-add" style='font-size:100rpx;'></icon>
+<view class='container-bottom'>
+    <view class='bottom-button' bindtap='toCreate'>
+        <icon class="iconfont icon-add"></icon>
     </view>
 </view>

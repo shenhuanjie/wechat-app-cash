@@ -5,6 +5,8 @@
         "pages/analysis/analysis",
         "pages/budget/budget",
         "pages/setting/setting",
+        "pages/create/create",
+        "pages/createAccount/createAccount",
         "pages/logs/logs"
     ],
     "window": {

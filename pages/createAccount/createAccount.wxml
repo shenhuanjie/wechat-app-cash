@@ -1,0 +1,48 @@
+<view class='container'>
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>类型</text>
+            </view>
+            <view class="item-flex">
+                <input placeholder='请选择账户类型' placeholder-class='font-content font-color-gray'></input>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>货币</text>
+            </view>
+            <view class="item-flex">
+                <input placeholder='请选择货币' placeholder-class='font-content font-color-gray'></input>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>名称</text>
+            </view>
+            <view class="item-flex">
+                <input placeholder='请输入账户名称' placeholder-class='font-content font-color-gray'></input>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>余额</text>
+            </view>
+            <view class="item-flex">
+                <input placeholder='请输入账户余额' placeholder-class='font-content font-color-gray'></input>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-item  font-color-gray'>备注</text>
+            </view>
+            <view class="item-flex">
+                <textarea placeholder='请输入备注' placeholder-class='font-content font-color-gray'></textarea>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 底部菜单栏 -->
+<view class='container-fixed-bottom fixed-bottom-button'>
+    <button> 保存</button>
+</view>

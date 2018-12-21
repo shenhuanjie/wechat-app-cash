@@ -1,11 +1,18 @@
-// pages/account/account.js
+// pages/create/create.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        typeSelected: 0,
+        typeList: [{
+            title: "支出",
+        }, {
+            title: "收入",
+        }, {
+            title: "转账",
+        }]
     },
 
     /**
@@ -63,9 +70,9 @@ Page({
     onShareAppMessage: function() {
 
     },
-    toCreate: function() {
-        wx.navigateTo({
-            url: '../../pages/createAccount/createAccount',
+    switchTab: function(even) {
+        this.setData({
+            typeSelected: even.currentTarget.dataset.index
         })
     }
 })

@@ -1,0 +1,99 @@
+<view class='navigation-bar  font-title'>
+    <block wx:for="{{typeList}}" wx:key="id" wx:for-index="index">
+        <block wx:if="{{typeSelected==index}}">
+            <view class='navigation-bar-item item-selected'>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+        <block wx:else>
+            <view class='navigation-bar-item' bindtap='switchTab' data-index="{{index}}">
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </block>
+</view>
+<view class='container'>
+    <block wx:if="{{typeSelected==0||typeSelected==1}}">
+        <view class='container-items'>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <block wx:if="{{typeSelected==0}}">
+                        <input value='-￥0.00'></input>
+                    </block>
+                    <block wx:if="{{typeSelected==1}}">
+                        <input class="font-color-green" value='￥0.00'></input>
+                    </block>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item font-color-gray'>分类</text>
+                </view>
+                <view class="item-flex">
+                    <input placeholder='请选择分类' placeholder-class='font-content font-color-gray'></input>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item font-color-gray'>账户</text>
+                </view>
+                <view class="item-flex">
+                    <input placeholder='请选择账户' placeholder-class='font-content font-color-gray'></input>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item  font-color-gray'>备注</text>
+                </view>
+                <view class="item-flex">
+                    <textarea placeholder='请输入备注' placeholder-class='font-content font-color-gray'></textarea>
+                </view>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{typeSelected==2}}">
+        <view class='container-items'>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <input class='font-color-blue' value='￥0.00'></input>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item font-color-gray'>分类</text>
+                </view>
+                <view class="item-flex">
+                    <input placeholder='请选择分类' placeholder-class='font-content font-color-gray'></input>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item font-color-gray'>付款</text>
+                </view>
+                <view class="item-flex">
+                    <input placeholder='请选择付款账户' placeholder-class='font-content font-color-gray'></input>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item font-color-gray'>收款</text>
+                </view>
+                <view class="item-flex">
+                    <input placeholder='请选择收款账户' placeholder-class='font-content font-color-gray'></input>
+                </view>
+            </view>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-item  font-color-gray'>备注</text>
+                </view>
+                <view class="item-flex">
+                    <textarea placeholder='请输入备注' placeholder-class='font-content font-color-gray'></textarea>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<!-- 底部菜单栏 -->
+<view class='container-fixed-bottom fixed-bottom-button' style=''>
+    <button> 保存</button>
+</view>
