@@ -1,0 +1,78 @@
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>今日交易</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>餐饮食物-早餐</text>
+                <text class='font-content'>-￥16.00</text>
+            </view>
+            <view class="item-flex font-color-gray">
+                <text class='font-item'>棠下村炒菜</text>
+                <text class='font-item'>08:03</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>餐饮食物-早餐</text>
+                <text class='font-content'>-￥16.00</text>
+            </view>
+            <view class="item-flex font-color-gray">
+                <text class='font-item'>棠下村炒菜</text>
+                <text class='font-item'>08:03</text>
+            </view>
+        </view>
+        <view class='items-group'>
+            <text class='font-title font-color-blue'>所有交易</text>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>收入支出</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>今天</text>
+                <text class='font-item font-color-green'>￥0.00</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>12月21日</text>
+                <text class='font-item '>-￥26.00</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>本周</text>
+                <text class='font-item font-color-green'>￥2,686.81</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>12月17日~12月23日</text>
+                <text class='font-item '>-￥587.84</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>本月</text>
+                <text class='font-item font-color-green'>￥4,929.01</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>12月1日~12月31日</text>
+                <text class='font-item '>-￥5,899.71</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>本年</text>
+                <text class='font-item font-color-green'>￥108,952.87</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>12月1日~12月31日</text>
+                <text class='font-item '>-￥92,191.75</text>
+            </view>
+        </view>
+
+    </view>
+</view>

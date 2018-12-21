@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/account/account",
+        "pages/analysis/analysis",
+        "pages/budget/budget",
+        "pages/setting/setting",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0ac775",
+        "navigationBarTitleText": "日常账本",
+        "navigationBarTextStyle": "light",
+        "backgroundColor": "#f0f0f0"
+    },
+    "tabBar": {
+        "selectedColor": "#0ac775",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "resource/images/ic_home_normal.png",
+                "selectedIconPath": "resource/images/ic_home_pressed.png"
+            },
+            {
+                "pagePath": "pages/account/account",
+                "text": "账户",
+                "iconPath": "resource/images/ic_account_normal.png",
+                "selectedIconPath": "resource/images/ic_account_pressed.png"
+            },
+            {
+                "pagePath": "pages/analysis/analysis",
+                "text": "统计",
+                "iconPath": "resource/images/ic_analysis_normal.png",
+                "selectedIconPath": "resource/images/ic_analysis_pressed.png"
+            },
+            {
+                "pagePath": "pages/setting/setting",
+                "text": "我的",
+                "iconPath": "resource/images/ic_setting_normal.png",
+                "selectedIconPath": "resource/images/ic_setting_pressed.png"
+            }
+        ]
+    }
+}

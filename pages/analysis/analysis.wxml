@@ -1,0 +1,70 @@
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>日趋势</text>
+                <text class='font-item font-color-gray'>查看一个月内每天统计</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>一周支出</text>
+                <text class='font-item font-color-gray'>查看一周支出报告</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>月度分类统计</text>
+                <text class='font-item font-color-gray'>查看一个月内分类统计</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>年度分类统计</text>
+                <text class='font-item font-color-gray'>查看一年内分类统计</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>年度收支统计</text>
+                <text class='font-item font-color-gray'>查看一年内每月收支统计</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>分类收支统计</text>
+                <text class='font-item font-color-gray'>查看一个分类的每月收支统计</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex-column">
+                <text class='font-content'>项目统计</text>
+                <text class='font-item font-color-gray'>查看一个项目内分类统计</text>
+            </view>
+        </view>
+    </view>
+</view>
