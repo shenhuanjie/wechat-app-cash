@@ -1,25 +1,18 @@
-// pages/setting/setting.js
-//获取应用实例
-const app = getApp()
+// pages/accountBook/accountBook.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        userInfo: {},
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        if (app.globalData.userInfo) {
-            this.setData({
-                userInfo: app.globalData.userInfo,
-                hasUserInfo: true
-            })
-        }
+
     },
 
     /**
@@ -70,22 +63,9 @@ Page({
     onShareAppMessage: function() {
 
     },
-    toCommonSetting: function() {
+    toCategory: function() {
         wx.navigateTo({
-            url: '../../pages/commonSetting/commonSetting',
-        })
-    },
-    toAccountBook: function() {
-        wx.navigateTo({
-            url: '../../pages/accountBook/accountBook',
-        })
-    },
-    getUserInfo: function(e) {
-        console.log(e)
-        app.globalData.userInfo = e.detail.userInfo
-        this.setData({
-            userInfo: e.detail.userInfo,
-            hasUserInfo: true
+            url: '../../pages/category/category',
         })
     }
 })

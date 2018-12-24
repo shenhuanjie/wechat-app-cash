@@ -1,0 +1,85 @@
+<view class='navigation-bar  font-title'>
+    <block wx:for="{{typeList}}" wx:key="id" wx:for-index="index">
+        <block wx:if="{{typeSelected==index}}">
+            <view class='navigation-bar-item item-selected'>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+        <block wx:else>
+            <view class='navigation-bar-item' bindtap='switchTab' data-index="{{index}}">
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </block>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>餐饮食物(3)</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>早餐</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>17笔交易</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>午餐</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>17笔交易</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>晚餐</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>17笔交易</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>交通运输(3)</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>BRT</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>17笔交易</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>公交车</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>17笔交易</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>大巴车</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-item font-color-gray'>17笔交易</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view style='margin-bottom:100rpx;'>
+    <icon class="iconfont icon-null"></icon>
+</view>
+<!-- 底部菜单栏 -->
+<view class='container-bottom'>
+    <view class='bottom-button' bindtap='toCreate'>
+        <icon class="iconfont icon-add"></icon>
+    </view>
+</view>

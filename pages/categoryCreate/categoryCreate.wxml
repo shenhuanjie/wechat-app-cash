@@ -1,0 +1,18 @@
+<view class='navigation-bar  font-title'>
+    <block wx:for="{{typeList}}" wx:key="id" wx:for-index="index">
+        <block wx:if="{{typeSelected==index}}">
+            <view class='navigation-bar-item item-selected'>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+        <block wx:else>
+            <view class='navigation-bar-item' bindtap='switchTab' data-index="{{index}}">
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </block>
+</view>
+<!-- 底部菜单栏 -->
+<view class='container-fixed-bottom fixed-bottom-button' style=''>
+    <button> 保存</button>
+</view>

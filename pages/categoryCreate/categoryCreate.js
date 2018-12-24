@@ -1,25 +1,25 @@
-// pages/setting/setting.js
-//获取应用实例
-const app = getApp()
+// pages/categoryCreate/categoryCreate.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        userInfo: {},
+        typeSelected: 0,
+        typeList: [{
+            title: "支出",
+        }, {
+            title: "收入",
+        }, {
+            title: "转账",
+        }]
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        if (app.globalData.userInfo) {
-            this.setData({
-                userInfo: app.globalData.userInfo,
-                hasUserInfo: true
-            })
-        }
+
     },
 
     /**
@@ -70,22 +70,9 @@ Page({
     onShareAppMessage: function() {
 
     },
-    toCommonSetting: function() {
-        wx.navigateTo({
-            url: '../../pages/commonSetting/commonSetting',
-        })
-    },
-    toAccountBook: function() {
-        wx.navigateTo({
-            url: '../../pages/accountBook/accountBook',
-        })
-    },
-    getUserInfo: function(e) {
-        console.log(e)
-        app.globalData.userInfo = e.detail.userInfo
+    switchTab: function(even) {
         this.setData({
-            userInfo: e.detail.userInfo,
-            hasUserInfo: true
-        })
-    }
+            typeSelected: even.currentTarget.dataset.index
+        });
+    },
 })

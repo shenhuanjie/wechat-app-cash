@@ -1,1 +1,5 @@
 /* pages/createAccount/createAccount.wxss */
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}

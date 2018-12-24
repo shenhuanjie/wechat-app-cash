@@ -20,89 +20,29 @@
         </view>
     </view>
 </view>
-<view class="container">
-    <view class='container-items'>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-title'>现金</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
+<block wx:for='{{accountList}}'>
+    <view class="container">
+        <view class='container-items'>
+            <view class='items-group items-group-flex'>
+                <view class="item-flex">
+                    <text class='font-title'>{{item.name}}</text>
+                    <text class='font-content font-color-green'>{{item.balance.number}}</text>
+                </view>
             </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>现金</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-    </view>
-</view>
-<view class="container">
-    <view class='container-items'>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-title'>储蓄卡</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>网商银行</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>中国银行</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>农业银行</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
+            <block wx:for='{{item.accountList}}'>
+                <view class='items-group items-group-flex' data-uuid='{{item.uuid}}'>
+                    <view class="item-flex">
+                        <text class='font-content'>{{item.name}}</text>
+                        <text class='font-content font-color-green'>{{item.balance}}</text>
+                    </view>
+                </view>
+            </block>
         </view>
     </view>
+</block>
+<view style='margin-bottom:100rpx;'>
+    <icon class="iconfont icon-null"></icon>
 </view>
-<view class="container">
-    <view class='container-items'>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-title'>网络支付账户</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>支付宝</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>微信钱包</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-    </view>
-</view>
-<view class="container">
-    <view class='container-items'>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-title'>应付账户</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-        <view class='items-group items-group-flex'>
-            <view class="item-flex">
-                <text class='font-content'>花呗</text>
-                <text class='font-content font-color-green'>￥3,019.50</text>
-            </view>
-        </view>
-    </view>
-</view>
-<view style='margin-bottom:100rpx;'><icon class="iconfont icon-null"></icon></view>
 <!-- 底部菜单栏 -->
 <view class='container-bottom'>
     <view class='bottom-button' bindtap='toCreate'>

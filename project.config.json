@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -60,7 +60,32 @@
 				{
 					"id": -1,
 					"name": "create",
-					"pathName": "pages/create/create"
+					"pathName": "pages/create/create",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "createAccount",
+					"pathName": "pages/createAccount/createAccount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "category",
+					"pathName": "pages/category/category",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "commonSetting",
+					"pathName": "pages/commonSetting/commonSetting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "accountBook",
+					"pathName": "pages/accountBook/accountBook",
+					"query": ""
 				}
 			]
 		}

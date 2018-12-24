@@ -1,0 +1,23 @@
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30rpx;
+    background-color: #0ac775;
+    color: #e0e0e0;
+}
+
+.navigation-bar .navigation-bar-item {
+    width: 120rpx;
+    text-align: center;
+    padding-bottom: 30rpx;
+}
+
+.navigation-bar .item-selected {
+    border-bottom: 5rpx solid #fff;
+}
+
+.navigation-bar .item-selected text {
+    color: #fff;
+}
+

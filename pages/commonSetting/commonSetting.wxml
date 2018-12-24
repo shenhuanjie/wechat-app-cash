@@ -1,0 +1,14 @@
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex' bindtap='toCategory'>
+            <view class="item-flex item-flex-start">
+                <view class='item-flex-icon'>
+                    <icon class="iconfont icon-card"></icon>
+                </view>
+                <view>
+                    <text class='font-content'>分类管理</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

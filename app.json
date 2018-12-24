@@ -2,11 +2,15 @@
     "pages": [
         "pages/index/index",
         "pages/account/account",
+        "pages/accountBook/accountBook",
         "pages/analysis/analysis",
         "pages/budget/budget",
         "pages/setting/setting",
+        "pages/commonSetting/commonSetting",
         "pages/create/create",
         "pages/createAccount/createAccount",
+        "pages/category/category",
+        "pages/categoryCreate/categoryCreate",
         "pages/logs/logs"
     ],
     "window": {

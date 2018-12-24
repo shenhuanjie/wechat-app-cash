@@ -1,0 +1,144 @@
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <image></image>
+            </view>
+            <view class="item-flex">
+                <text class='font-content'>如果你也曾经想起，那段最快乐的时光，请记住，我在想念你</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex" style='justify-content:space-around;'>
+                <text class='font-content'>￥3,020</text>
+                <text class='font-content font-color-red'>￥-92,192</text>
+                <text class='font-content font-color-green'>￥108,953</text>
+            </view>
+            <view class="item-flex" style='justify-content:space-around;'>
+                <text class='font-content font-color-gray'>总资产</text>
+                <text class='font-content font-color-gray'>总支出</text>
+                <text class='font-content font-color-gray'>总收入</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content font-color-gray'>2018年9月20日 在线 标准 人民币</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>账本成员</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>沈焕杰（我的）</text>
+                <text class='font-item font-color-gray'>3天前更新</text>
+            </view>
+            <view class="item-flex">
+                <text class='font-content'>管理员</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>数据管理</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>交易</text>
+                <text class='font-item font-color-gray'>246笔</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>项目</text>
+                <text class='font-item font-color-gray'>2个</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex' bindtap='toCategory'>
+            <view class="item-flex">
+                <text class='font-content'>分类</text>
+                <text class='font-item font-color-gray'>2个</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>商家</text>
+                <text class='font-item  font-color-gray'>2个</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>标签</text>
+                <text class='font-item font-color-gray'>2个</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>高级功能</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>周期交易</text>
+                <text class='font-item font-color-gray'>0笔</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group'>
+            <text class='font-title'>统计日期</text>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>周起始日</text>
+                <text class='font-item font-color-gray'>周一</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>月起始日</text>
+                <text class='font-item font-color-gray'>01</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>年起始月</text>
+                <text class='font-item font-color-gray'>1月</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="container">
+    <view class='container-items'>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>导出交易</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>导入交易</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>清空账本数据</text>
+            </view>
+        </view>
+        <view class='items-group items-group-flex'>
+            <view class="item-flex">
+                <text class='font-content'>删除并退出</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,4 +1,5 @@
 @import "resource/css/iconfont.wxss";
+@import "lib/css/weui.wxss";
 
 /**app.wxss**/
 
@@ -125,4 +126,7 @@ page {
 
 .font-color-green {
     color: #0ac775;
+}
+.font-color-red {
+    color: red;
 }

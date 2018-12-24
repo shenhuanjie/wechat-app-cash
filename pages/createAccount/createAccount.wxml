@@ -5,7 +5,9 @@
                 <text class='font-item font-color-gray'>类型</text>
             </view>
             <view class="item-flex">
-                <input placeholder='请选择账户类型' placeholder-class='font-content font-color-gray'></input>
+                <picker bindchange="bindpicker_accountType" value="{{accountType_index}}" range="{{accountType}}">
+                    <input class='font-content' placeholder='请选择账户类型' placeholder-class='font-content font-color-gray' value='{{accountType[accountType_index]}}' disabled='disabled'></input>
+                </picker>
             </view>
         </view>
         <view class='items-group items-group-flex'>
@@ -13,7 +15,9 @@
                 <text class='font-item font-color-gray'>货币</text>
             </view>
             <view class="item-flex">
-                <input placeholder='请选择货币' placeholder-class='font-content font-color-gray'></input>
+                <picker bindchange="bindpicker_currency" value="{{currency_index}}" range="{{currency}}">
+                    <input class='font-content' placeholder='请选择货币类型' placeholder-class='font-content font-color-gray' value='{{currency[currency_index]}}' disabled='disabled'></input>
+                </picker>
             </view>
         </view>
         <view class='items-group items-group-flex'>
@@ -21,7 +25,7 @@
                 <text class='font-item font-color-gray'>名称</text>
             </view>
             <view class="item-flex">
-                <input placeholder='请输入账户名称' placeholder-class='font-content font-color-gray'></input>
+                <input class='font-content' placeholder='请输入账户名称' placeholder-class='font-content font-color-gray' bindblur='bindinput_name' bindconfirm='bindinput_name'></input>
             </view>
         </view>
         <view class='items-group items-group-flex'>
@@ -29,7 +33,7 @@
                 <text class='font-item font-color-gray'>余额</text>
             </view>
             <view class="item-flex">
-                <input placeholder='请输入账户余额' placeholder-class='font-content font-color-gray'></input>
+                <input class='font-content' type='number' placeholder='请输入账户余额' placeholder-class='font-content font-color-gray' value='{{account.balance.number}}' bindblur='bindinput_balance' bindconfirm='bindinput_balance'></input>
             </view>
         </view>
         <view class='items-group items-group-flex'>
@@ -37,12 +41,12 @@
                 <text class='font-item  font-color-gray'>备注</text>
             </view>
             <view class="item-flex">
-                <textarea placeholder='请输入备注' placeholder-class='font-content font-color-gray'></textarea>
+                <textarea class='font-content' placeholder='请输入备注' placeholder-class='font-content font-color-gray'></textarea>
             </view>
         </view>
     </view>
 </view>
 <!-- 底部菜单栏 -->
 <view class='container-fixed-bottom fixed-bottom-button'>
-    <button> 保存</button>
+    <button bindtap='saveAction'> 保存</button>
 </view>

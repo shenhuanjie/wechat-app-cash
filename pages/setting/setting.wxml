@@ -15,7 +15,7 @@
 </view>
 <view class="container">
     <view class='container-items'>
-        <view class='items-group items-group-flex'>
+        <view class='items-group items-group-flex' bindtap='toAccountBook'>
             <view class="item-flex item-flex-start">
                 <view class='item-flex-icon'>
                     <icon class="iconfont icon-card"></icon>
@@ -99,7 +99,7 @@
                 </view>
             </view>
         </view>
-        <view class='items-group items-group-flex'>
+        <view class='items-group items-group-flex' bindtap='toCommonSetting'>
             <view class="item-flex item-flex-start">
                 <view class='item-flex-icon'>
                     <icon class="iconfont icon-gear"></icon>
